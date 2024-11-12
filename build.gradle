@@ -8,8 +8,8 @@ subprojects {
     apply plugin: 'maven-publish'
     apply plugin: 'jacoco'
     group = 'dev.rosewood'
-    targetCompatibility = '21'
-    sourceCompatibility = '21'
+    targetCompatibility = '17'
+    sourceCompatibility = '17'
 
     java {
         disableAutoTargetJvm() // Allows depending on Paper's newer APIs even though they use newer java version
@@ -27,9 +27,11 @@ subprojects {
         maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
         maven { url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
         maven { url = 'https://repo.rosewooddev.io/repository/public/' }
+        maven { url = "https://jitpack.io"  }
     }
 
     dependencies {
         compileOnly 'org.jetbrains:annotations:24.0.1'
     }
+
 }
