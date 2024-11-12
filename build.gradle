@@ -32,15 +32,4 @@ subprojects {
     dependencies {
         compileOnly 'org.jetbrains:annotations:24.0.1'
     }
-
-    publishing {
-        publications {
-            release(MavenPublication) {
-                groupId = "dev.rosewood.rosegarden"
-                artifactId = "RoseGarden"
-                version = "1.4.5"
-
-            }
-        }
-    }
 }
